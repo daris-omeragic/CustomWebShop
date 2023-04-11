@@ -5,6 +5,7 @@ import Text from "../Text/Text";
 import Grid from "@mui/material/Grid";
 import { colors, fontSize, fontWeight } from '../../util/theme';
 
+
 const TopRowText = () => {
 
     const styles = {
