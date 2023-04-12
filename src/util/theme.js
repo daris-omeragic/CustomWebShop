@@ -26,3 +26,25 @@ export const fontWeight = {
     mediumBold: '600',
     bold: '800',
 };
+
+
+
+export const fontFamily = {
+    LatoBlack: 'LatoBlack',
+    LatoBlackItalic: 'LatoBlackItalic',
+    LatoBold: 'LatoBold',
+    LatoBoldItalic: 'LatoBoldItalic',
+    LatoItalic: 'LatoItalic',
+    LatoLight: 'LatoLight',
+    LatoLightItalic: 'LatoLightItalic',
+    LatoRegular: 'LatoRegular',
+    LatoThin: 'LatoThin',
+    LatoThinItalic: 'LatoThinItalic',
+    MontserratBlack: 'MontserratBlack',
+    MontserratBlackItalic: 'MontserratBlackItalic',
+    MontserratBold: 'MontserratBold',
+    MontserratBoldItalic: 'MontserratBoldItalic',
+    MontserratExtraBold: 'MontserratExtraBold',
+    MontserratExtraLight: 'MontserratExtraLight',
+    'Libre Bodoni, serif' : "LibreBadoniRegular"
+}

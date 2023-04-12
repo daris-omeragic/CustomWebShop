@@ -4,7 +4,7 @@ import Text from '../../components/Text/Text';
 import { colors, fontSize, fontWeight } from '../../util/theme';
 import { Grid } from '@mui/material';
 import TopRowText from "../../components/CarouselText/TopRowCarousel";
-import FlageImage from "../../assets/images/FlagImage.png";
+import FlageImage from "../../assets/images/TopRowImage/flag.png"
 import TopRowTitle from '../../components/TopRowTittle/TopRowTittle';
 
 
