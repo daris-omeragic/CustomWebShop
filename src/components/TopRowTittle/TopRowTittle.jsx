@@ -1,5 +1,5 @@
 import Text from '../../components/Text/Text';
-import { colors, fontSize, fontWeight } from '../../util/theme'
+import { colors, fontFamily, fontSize, fontWeight } from '../../util/theme'
 
 
 const TopRowTitle = ({ text,index }) => {
@@ -13,7 +13,8 @@ const TopRowTitle = ({ text,index }) => {
         padding: '0px 7px',
         fontWeight: index === 3 ? fontWeight.medium : fontWeight.mediumBold,
         border: index === 0 ? '1px solid gray' : 'none',
-        fontSize : index === 3 ? fontSize.optimal : fontSize.normal
+        fontSize : index === 3 ? fontSize.optimal : fontSize.normal,
+        fontFamily : fontFamily.LatoRegular
       },
     };
 

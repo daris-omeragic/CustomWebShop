@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import Text from "../Text/Text";
 import Grid from "@mui/material/Grid";
-import { colors, fontSize, fontWeight } from '../../util/theme';
+import { colors, fontFamily, fontSize } from '../../util/theme';
 
 
 const TopRowText = () => {
@@ -24,7 +24,8 @@ const TopRowText = () => {
         text: {
             fontSize: fontSize.small,
             color: colors.black,
-            fontWeight : fontWeight.mediumBold,
+            //fontWeight : fontWeight.mediumBold,
+            fontFamily : fontFamily.LatoItalic
         },
     };
 

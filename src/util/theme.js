@@ -9,10 +9,10 @@ export const colors = {
 
 
 export const fontSize = {
-    small: '10px',
-    optimal: '12px',
+    small: '9px',
+    optimal: '13px',
     normal: '15px',
-    medium: '19px',
+    medium: '20px',
     large: '24px',
     xLarge: '32px',
     xxLarge : "40px",

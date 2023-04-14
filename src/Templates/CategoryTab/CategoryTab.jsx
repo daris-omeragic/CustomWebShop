@@ -1,6 +1,6 @@
 import Text from '../../components/Text/Text';
 import SimplifiedDiv from '../../components/SimplifiedDiv/SimplifiedDiv';
-import { colors, fontSize, fontWeight } from "../../util/theme";
+import { colors, fontFamily, fontSize, fontWeight } from "../../util/theme";
 import React, { useState } from 'react';
 import categories from './Categories';
 import SubCategories from "./SubCategories";
@@ -18,9 +18,11 @@ const CategoryTab = () => {
     category: {
       color: colors.cleanWhite,
       margin: '0px 25px',
-      fontSize: fontSize.normal,
+      fontSize: fontSize.optimal,
       cursor: 'pointer',
-      borderBottom: "1px solid"
+      borderBottom: "1px solid",
+      fontFamily : fontFamily.LatoThin,
+      fontWeight : fontWeight.bold
     },
     textConatiner: {
       display: "flex",
@@ -35,15 +37,17 @@ const CategoryTab = () => {
       position: 'fixed',
       fontSize: fontSize.xxLarge,
       letterSpacing: "7px",
-      fontWeight: fontWeight.light,
       color : colors.black,
+      fontFamily : fontFamily.LatoThin,
+      fontWeight: fontWeight.mediumBold,
     },
     subtitle: {
       position: 'relative',
       fontSize: fontSize.large,
       letterSpacing: "5px",
-      fontWeight: fontWeight.medium,
+      fontWeight: fontWeight.bold,
       top: "3rem",
+      fontFamily : fontFamily.LatoThin
     }
     
   };
@@ -66,12 +70,13 @@ const CategoryTab = () => {
       color: "white",
       alignItems: 'center',
       fontSize: fontSize.optimal,
-      fontWeight: fontWeight.light,
+      fontWeight: fontWeight.medium,
       padding: '15px',
       transition: 'height 0.8s ease-out',
       width : "30%",
       opacity : '90%',
-      letterSpacing : "2px",
+      letterSpacing : "0px",
+      fontFamily : fontFamily.LatoThin,
     },
     activeSubCategory: {
       borderColor: colors.primary,
