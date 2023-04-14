@@ -41,6 +41,23 @@ const HomePage = () => {
             width: "35%",
             display: "flex",
             justifyContent: "center"
+        },
+        text: {
+            fontSize: fontSize.xLarge,
+            color: colors.black,
+            letterSpacing: '6px',
+            fontFamily: fontFamily.MontserratExtraLight,
+            fontWeight: fontWeight.bold,
+        },
+        divStyle: {
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            fontFamily: fontFamily.LatoThin,
+            letterSpacing: '1px',
+            padding: '10px 0px',
+            cursor: 'pointer',
+            width: "44%",
         }
     };
     return (
@@ -52,30 +69,15 @@ const HomePage = () => {
                         backgroundImage: `url('https://cb2.scene7.com/is/image/CB2/040523_outdoor_promo_D?wid=1920&qlt=80&op_sharpen=1')`,
                     }}>
                         <SimplifiedDiv style={styles.containerText}>
+                            <Text style={styles.text}>UP TO 25% OFF</Text>
                             <Text style={{
-                                fontSize: fontSize.xLarge,
-                                color: colors.black,
-                                letterSpacing: '6px',
-                                fontFamily: fontFamily.MontserratExtraLight,
-                                fontWeight: fontWeight.bold,
-                            }}>UP TO 25% OFF</Text>
-                            <Text style={{
+                                ...styles.text,
                                 fontSize: fontSize.medium,
-                                fontWeight: 400,
-                                color: colors.black,
+                                fontWeight: fontWeight.medium,
                                 letterSpacing: '4px',
                                 fontFamily: fontFamily.LatoRegular
                             }}>OUTDOOR FURNITURE & DECOR</Text>
-                            <SimplifiedDiv style={{
-                                display: 'flex',
-                                justifyContent: 'center',
-                                alignItems: 'center',
-                                fontFamily: fontFamily.LatoThin,
-                                letterSpacing: '1px',
-                                padding: '10px 0px',
-                                cursor: 'pointer',
-                                width: "44%",
-                            }}>
+                            <SimplifiedDiv style={styles.divStyle}>
                                 <span style={{
                                     ...styles.spanStyle,
                                     color: colors.black,
@@ -90,7 +92,6 @@ const HomePage = () => {
                                     padding: "0px",
                                 }}>SHOP ALL OUTDOOR</span>
                             </SimplifiedDiv>
-
                         </SimplifiedDiv>
                     </SimplifiedDiv>
                 </Grid>
@@ -100,37 +101,22 @@ const HomePage = () => {
                 backgroundImage: `url('https://cb2.scene7.com/is/image/CB2/040623_new_D_1?wid=1920&qlt=75')`,
             }}>
                 <SimplifiedDiv style={styles.containerText}>
-                    <Text style={{
-                        fontSize: fontSize.xLarge,
-                        fontWeight: fontWeight.bold,
-                        color: colors.black,
-                        letterSpacing: '4px',
-                        fontFamily: fontFamily.MontserratExtraLight
-                    }}>NEW APRIL ARRIVALS</Text>
-                    <SimplifiedDiv style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        fontFamily: fontFamily.LatoThin,
-                        letterSpacing: '1px',
-                        padding: '10px 0px',
-                        cursor: 'pointer',
-                        width: "100%",
-                    }}>
+                    <Text style={styles.text}>NEW APRIL ARRIVALS</Text>
+                    <SimplifiedDiv style={{ ...styles.divStyle, width: "100%" }}>
                         <span style={{
                             ...styles.spanStyle,
                             color: colors.black,
                             marginRight: '0px',
                             padding: "0px",
                             borderRight: '0.25px solid black',
-                            width : "15%",
+                            width: "15%",
                         }}>SHOP ALL NEW</span>
                         <span style={{
                             ...styles.spanStyle,
                             color: colors.black,
                             marginLeft: '0px',
                             padding: "0px",
-                            width : "15%"
+                            width: "15%"
                         }}>SHOP SOFAS</span>
                     </SimplifiedDiv>
                 </SimplifiedDiv>
@@ -146,12 +132,7 @@ const HomePage = () => {
                     height: "60%",
                     marginLeft: '16%'
                 }}>
-                    <Text style={{
-                        fontSize: fontSize.xLarge,
-                        color: colors.black,
-                        letterSpacing: '6px',
-                        fontFamily: fontFamily.MontserratExtraLight
-                    }}>FOR ALL YOUR SPRING FLINGS</Text>
+                    <Text style={styles.text}>FOR ALL YOUR SPRING FLINGS</Text>
                     <span style={{
                         ...styles.spanStyle,
                         width: '100%',
@@ -165,13 +146,7 @@ const HomePage = () => {
                 backgroundImage: `url('https://cb2.scene7.com/is/image/CB2/010223_Home_D_Dining?wid=1920&qlt=75')`,
             }}>
                 <SimplifiedDiv style={styles.containerText}>
-                    <Text style={{
-                        fontSize: fontSize.xLarge,
-                        fontWeight: fontWeight.bold,
-                        color: colors.black,
-                        letterSpacing: '6px',
-                        fontFamily: fontFamily.MontserratExtraLight
-                    }}>THE ART OF FINE DINING</Text>
+                    <Text style={styles.text}>THE ART OF FINE DINING</Text>
                     <span style={{ ...styles.spanStyle, color: colors.black, }}>SHOP DINING ROOM FURNITURE</span>
                 </SimplifiedDiv>
             </SimplifiedDiv>
@@ -186,14 +161,7 @@ const HomePage = () => {
                     height: "100%",
                     marginLeft: '15%'
                 }}>
-                    <Text style={{
-                        fontSize: fontSize.xLarge,
-                        fontWeight: fontWeight.bold,
-                        color: colors.cleanWhite,
-                        letterSpacing: '6px',
-                        fontFamily: fontFamily.MontserratExtraLight
-                    }}>
-                        UP TO 60% OFF NEW MARKDOWNS</Text>
+                    <Text style={{ ...styles.text, color: colors.cleanWhite }}>UP TO 60% OFF NEW MARKDOWNS</Text>
                     <span style={{ ...styles.spanStyle, marginTop: "5px" }}>SHOP NOW</span>
                 </SimplifiedDiv>
             </SimplifiedDiv>
@@ -201,17 +169,12 @@ const HomePage = () => {
                 ...styles.container,
                 backgroundImage: `url('https://cb2.scene7.com/is/image/CB2/010223_Home_D_Pillow_re?wid=1920&qlt=50')`,
             }}>
-                <SimplifiedDiv style={{
-                    ...styles.containerText,
-                    alignItems: 'flex-end',
-                }}>
+                <SimplifiedDiv style={{ ...styles.containerText, alignItems: 'flex-end' }}>
                     <Text style={{
+                        ...styles.text,
                         fontSize: fontSize.large,
-                        fontWeight: fontWeight.bold,
+                        width: '30%',
                         color: colors.cleanWhite,
-                        letterSpacing: '6px',
-                        fontFamily: fontFamily.MontserratExtraLight,
-                        width: '30%'
                     }}>FREE SHIPPING ON 1000+ ITEMS</Text>
                     <span style={styles.spanStyle}>SHOP NOW</span>
                 </SimplifiedDiv>
